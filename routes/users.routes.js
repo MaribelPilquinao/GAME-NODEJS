@@ -14,7 +14,6 @@ const { userExists } = require('../middlewares/users.middlewares');
 const {
 	protectSession,
 	protectUsersAccount,
-	protectAdmin,
 } = require('../middlewares/auth.middlewares');
 const {
 	createUserValidators,
@@ -22,11 +21,11 @@ const {
 
 const usersRouter = express.Router();
 
-usersRouter.post('/', createUserValidators, createUser);
+usersRouter.post('/signup', createUserValidators, createUser);
 
 usersRouter.post('/login', login);
 
-// Protecting below endpoints
+// Endpoinds protected
 usersRouter.use(protectSession);
 
 usersRouter.get('/', getAllUsers);

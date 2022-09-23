@@ -18,7 +18,7 @@ const startServer = async () => {
 		await db.sync();
 
 		// Set server to listen
-		const PORT = 4000;
+		const PORT = 2880;
 
 		app.listen(PORT, () => {
 			console.log('Express app running!');

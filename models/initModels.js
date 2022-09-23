@@ -1,8 +1,11 @@
 // Models
 const { User } = require('./user.model');
+const { Review } = require('./review.model');
+const { Game } = require('./game.model');
+const { Console } = require('./console.model');
 
 const initModels = () => {
-    // 1 User <----> M Review
+	// 1 User <----> M Review
 	User.hasMany(Review, { foreignKey: 'userId' });
 	Review.belongsTo(User);
 

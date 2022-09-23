@@ -1,7 +1,7 @@
 {
-	"name": "security-basics",
+	"name": "game",
 	"version": "1.0.0",
-	"description": "A simple Express server",
+	"description": "Game store exercise",
 	"main": "index.js",
 	"scripts": {
 		"start": "nodemon server.js"
@@ -16,9 +16,9 @@
 		"jsonwebtoken": "^8.5.1",
 		"pg": "^8.8.0",
 		"pg-hstore": "^2.3.4",
-		"sequelize": "^6.21.4"
+		"sequelize": "^6.23.1"
 	},
 	"devDependencies": {
-		"nodemon": "^2.0.19"
+		"nodemon": "^2.0.20"
 	}
 }
